@@ -1,0 +1,33 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+.logo{
+  width: 60px;
+  height: auto;
+  float: left;
+  margin-right: 5px;
+}
+
+
+.navigation li{
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 5px;
+  padding: 32px 5rem;
+  background: gray;
+}
+
+.navigation li:hover{
+  background: black;
+}
+
+nav{
+  background: blue;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
