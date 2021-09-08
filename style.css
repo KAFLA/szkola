@@ -15,15 +15,15 @@
   vertical-align: top;
   margin-right: 5px;
   padding: 32px 5rem;
-  background: gray;
+  background: #6B71F2;
 }
 
 .navigation li:hover{
-  background: black;
+  background: #303AF2;
 }
 
 nav{
-  background: blue;
+  background: #F2F1DF;
 }
 
 .navigation a{
