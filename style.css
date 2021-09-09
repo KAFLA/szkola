@@ -19,6 +19,15 @@
   display: flex;
 }
 
+nav{
+  text-decoration: none;
+  color: #4400DB
+}
+
+nav.menu:hover{
+  text-decoration: underline;
+}
+
 nav.menu{
   flex: 1;
   background: yellow;
