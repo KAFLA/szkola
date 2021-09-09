@@ -1,33 +1,44 @@
 *{
-  padding: 0px;
-  margin: 0px;
-}
-.logo{
-  width: 60px;
-  height: auto;
-  float: left;
-  margin-right: 5px;
+  padding: 0;
+  margin: 0;
 }
 
-
-.navigation li{
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 5px;
-  padding: 32px 5rem;
-  background: #6B71F2;
+.wrapper {
+  background: rgb(0, 95, 255);
+  height: 100vh;
 }
 
-.navigation li:hover{
-  background: #303AF2;
+.header {
+  background: red;
+  height: 10%;
 }
 
-nav{
-  background: #F2F1DF;
+.container {
+  background: green;
+  height: 80%;
+  display: flex;
 }
 
-.navigation a{
-    text-decoration: none;
-    color: white;
-    text-align: center;
+nav.menu{
+  flex: 1;
+  background: yellow;
+}
+
+
+article.frame{
+  flex: 4;
+  border: solid;
+  border-color: navy;
+  padding: 10px;
+  margin: 5px;
+  border-width: 1px;
+}
+
+.text{
+  color: #DE47C1;
+}
+
+.footer {
+  background: blue;
+  height: 10%;
 }
