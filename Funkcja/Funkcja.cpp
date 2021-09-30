@@ -3,39 +3,44 @@
 
 using namespace std;
 
+float delta(float a, float b, float c) {
+	return b * b - 4 * a * c;
+}
+
+float x1 (float a, float b, float delta){
+	return (-b - sqrt(delta)) / (2 * a);
+}
+
+float x2 (float a, float b, float delta){
+	return (-b + sqrt(delta)) / (2 * a);
+}
+
 int main()
 {
-	float a, b, c, delta, x1, x2, wynik;
+	float a, b, c, d;
 
-	cout << "podaj a: "; cin >> a;
-	cout << "podaj b: "; cin >> b;
-	cout << "podaj c: "; cin >> c;
+	cin >> a >> b >> c;
 
-	delta = pow(b, 2) - 4 * a * c;
+	d = delta(a, b, c);
+	cout << d << endl;
 
-	cout << "delta to: " << delta << endl;
-	
-	if (delta > 0) {
-		cout << "delta dodatnia" << endl;
-		x1 = (-b - sqrt(delta)) / (2 * a);
-		x2 = (-b + sqrt(delta)) / (2 * a);
-
-		cout << "X1:" << x1 << endl;
-		cout << "X2: " << x2 << endl;
+	if (d > 0)
+	{
+		cout << x1(a, b, d) << endl;
+		cout << x2(a, b, d) << endl;
 	}
+
 	else {
-		if (delta == 0)
-		{
-			cout << "delta jest zerowa" << endl;
-			x1 = x2 = (-b) / (2 * a);
-			cout << "X1 i X2: " << x1;
+		if (d == 0) {
+			cout << x1(a, b, d) << endl;
 		}
 		else
 		{
 			cout << "delta jest ujemna" << endl;
-
 		}
 	}
 
+
+	return 0;
 }
 
