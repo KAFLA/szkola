@@ -21,5 +21,6 @@ int main()
 
 	cout << "Zasieg wynosi: " << Z << endl;
 
+
 }
 
